@@ -4,7 +4,7 @@ import Postbox from '../components/Postbox'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className='my-7 mx-auto max-w-5xl'>
       <Head>
         <title>Reddit 2.0 Clone</title>
       </Head>
