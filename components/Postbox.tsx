@@ -21,11 +21,11 @@ function Postbox() {
     formState: { errors },
   } = useForm<FormData>();
   const [imageOpenBox, setImageOpenBox] = useState(false);
-  
-  const onSubmit=handleSubmit(async(formData)=>{
+
+  const onSubmit = handleSubmit(async (formData) => {
     console.log(formData);
-  })
-  
+  });
+
   return (
     <form onSubmit={onSubmit}>
       <div className="flex items-center space-x-3">
@@ -91,7 +91,10 @@ function Postbox() {
             </div>
           )}
           {!!watch("postTitle") && (
-            <button type="submit" className="w-full rounded-full bg-blue-400 p-2 text-white">
+            <button
+              type="submit"
+              className="w-full rounded-full bg-blue-400 p-2 text-white"
+            >
               Create Post
             </button>
           )}
